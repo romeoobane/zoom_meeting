@@ -24,8 +24,8 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "./node_modules/@zoomus/websdk/dist/lib/",
-                "output": "./node_modules/@zoomus/websdk/dist/lib/"
+                "input": "/node_modules/@zoomus/websdk/dist/lib/",
+                "output": "/node_modules/@zoomus/websdk/dist/lib/"
               }
             ],
             "styles": [
