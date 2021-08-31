@@ -18,7 +18,7 @@ ZoomMtg.i18n.reload('en-US');
 export class AppComponent implements OnInit {
 
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
-  signatureEndpoint = 'http://b99d-2001-4454-68e-8e00-c43b-2788-be72-f4c6.ngrok.io'
+  signatureEndpoint = 'http://localhost:4000'
   apiKey = 'rfxdbKqzSuq7ZwRBAe7VsQ'
   meetingNumber = '71233057614'
   role = 0
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
 	    role: this.role
     }).toPromise().then((data: any) => {
       if(data.signature) {
-        console.log(data.signature)
+        console.log('signature: '+data.signature)
         this.startMeeting(data.signature)
       } else {
         console.log(data)
